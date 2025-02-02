@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './contact.css';
+const url = import.meta.env.VITE_API_URL
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -30,7 +31,7 @@ function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validate()) {
-            axios.post('http://127.0.0.1:3000/api/user/contact', {
+            axios.post(`${url}/api/user/contact`, {
                 name: formData.name,
                 email: formData.email,
                 message: formData.message
