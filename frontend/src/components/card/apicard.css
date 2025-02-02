@@ -1,0 +1,73 @@
+.apicard {
+    max-width: 300px;
+    margin: 32px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  h2 {
+    margin-bottom: 0;
+  }
+  
+  .apicard-header {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    align-items: center;
+  }
+  
+  .apicard-heart {
+    width: 40px;
+    height: 40px;
+    color: #3b82f6; 
+  }
+  
+  .apicard-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .apicard-description {
+    font-size: 1rem;
+    color: #6b7280; 
+  }
+  
+  .apicard-content {
+    padding: 16px;
+  }
+  
+  .apicard-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .apicard-created-by {
+    font-size: 0.875rem;
+    color: #6b7280; 
+  }
+  
+  .apicard-author {
+    font-weight: 600;
+  }
+  
+  .apicard-btn-outline {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    border: 2px solid #3b82f6;
+    background-color: transparent;
+    color: #3b82f6;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .apicard-btn-outline:hover {
+    background-color: #3b82f6;
+    color: white;
+  }
+  

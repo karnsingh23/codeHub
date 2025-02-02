@@ -1,0 +1,166 @@
+
+.about-container {
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  background-color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; 
+}
+
+.about-header {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  color: #f89c42;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: #ddd;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  word-wrap: break-word; 
+}
+
+
+.about-section {
+  margin-bottom: 40px;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: #f89c42;
+  margin-bottom: 15px;
+  text-align: center; 
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+  max-width: 1200px;
+  margin: 0 auto;
+  word-wrap: break-word;
+}
+
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 20px;
+  box-sizing: border-box; 
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #f89c42;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .about-header h1 {
+    font-size: 2.25rem;
+  }
+
+  .about-header p {
+    font-size: 1.1rem;
+  }
+
+  .about-section p {
+    font-size: 1.1rem;
+  }
+
+  .team-container {
+    gap: 15px;
+  }
+
+  .team-member {
+    width: calc(50% - 15px); 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-header h1 {
+    font-size: 2rem;
+  }
+
+  .about-header p {
+    font-size: 1rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+    max-width: 90%; 
+  }
+
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-container {
+    padding: 15px;
+  }
+
+  .about-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .about-header p {
+    font-size: 0.9rem;
+  }
+
+  .about-section p {
+    font-size: 0.9rem;
+    max-width: 100%; 
+  }
+
+  .team-member img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .team-member h3 {
+    font-size: 1.125rem;
+  }
+
+  .team-member p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,228 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #555, #333); 
+  color: orange;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 28px;
+  color: orange;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+
+.nav-links a {
+  text-decoration: none;
+  color: orange; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ff6f00; 
+}
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+.search-input {
+  width: 220px;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  font-size: 16px;
+  color: #faf8f8;
+  background: rgb(78, 78, 78);
+  transition: width 0.3s;
+}
+
+.search-input:focus {
+  width: 300px;
+}
+
+.search-icon {
+  font-size: 20px;
+  color: rgb(30, 28, 28);
+  cursor: pointer;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+  color: orange; 
+}
+
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(7, 7, 7, 0.9);
+  padding: 15px;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: orange;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  transition: color 0.3s;
+}
+
+.mobile-menu a:hover {
+  color: #ff6f00; 
+}
+
+
+.profile-container {
+  position: relative;
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  color: black;
+  width: 120px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.dropdown-item {
+  padding: 10px;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  border: none;
+}
+.btn-logout{
+  width: 100%;
+  font-size: 18px;
+}
+
+
+.dropdown-item:hover {
+  background-color: #444;
+  color: rgb(245, 242, 242);
+}
+
+
+.login-btn {
+  background-color: #f9a825; 
+  color: white; 
+  font-size: 16px; 
+  font-weight: 600; 
+  padding: 8px 12px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.login-btn:hover {
+  background-color: #ffb300; 
+  transform: scale(1.05); 
+}
+
+.login-btn:focus {
+  outline: none; 
+}
+
+.login-btn:active {
+  background-color: #f57f17; 
+}
+
+
+.authButton {
+  background-color: transparent; 
+  border: none; 
+  cursor: pointer; 
+  padding: 10px; 
+  transition: transform 0.2s ease, color 0.3s ease; 
+}
+
+.authButton:hover {
+  transform: scale(1.1); 
+  color: #74C0FC; 
+}
+
+.authButton:focus {
+  outline: none; 
+}
+
+.authButton i {
+  color: #333; 
+  transition: color 0.3s ease; 
+}
+
+.authButton:hover i {
+  color: #74C0FC; 
+}
+
+.authButton:active i {
+  color: #4F92FF; 
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .mobile-menu.open {
+    display: flex;
+  }
+
+
+  .hamburger .close-btn {
+    font-size: 30px;
+    color: orange;
+  }
+}
+
