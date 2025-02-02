@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './profile.css';
+const url = import.meta.env.VITE_API_URL
 
 function Profile() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     axios
-      .get('http://127.0.0.1:3000/api/user/getScore', {
+      .get(`${url}/api/user/getScore`, {
         headers: {
           Authorization: 'Bearer ' + localStorage.getItem('token'),
         },
