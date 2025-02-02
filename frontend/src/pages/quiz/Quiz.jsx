@@ -5,6 +5,7 @@ import Score from "../../components/quiz/Score";
 import "./quiz.css";
 import { useParams } from "react-router-dom";
 import axios from 'axios';
+const url = import.meta.env.VITE_API_URL
 
 const Quiz = () => {
     const { num } = useParams();
@@ -89,7 +90,7 @@ const Quiz = () => {
             }
     
             
-            const response = await axios.post('http://127.0.0.1:3000/api/user/score', { score,quizTitle }, {
+            const response = await axios.post(`${url}/api/user/score`, { score,quizTitle }, {
                 headers: {
                     Authorization: `Bearer ${token}` 
                 }
